@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>RestaurantAI Dubai — AI Call & WhatsApp Assistant</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Instrument+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">Restaurant<span>AI</span></div>
+    <div class="nav-pill">🇦🇪 Dubai</div>
+    <button class="nav-cta" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">Get
+      Started</button>
+  </nav>
+
+  <!-- ══════════════════════════
+     HERO
+══════════════════════════ -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-tag">🤖 AI Call + WhatsApp · Dubai Restaurants</div>
+    <h1>Never Miss<br>A <span class="g">Call</span> Or A<br><span class="b">Message</span> Again.</h1>
+    <p class="hero-sub">Two AI assistants that handle every call and WhatsApp message 24/7 — books tables, answers
+      questions, speaks Arabic + English.</p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="document.getElementById('demo').scrollIntoView({behavior:'smooth'})">▶ Watch
+        Live Demo</button>
+      <button class="btn-secondary" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">See
+        Pricing</button>
+    </div>
+
+    <!-- Mini phones preview -->
+    <div class="hero-phones" style="animation:float 4s ease-in-out infinite">
+      <!-- Call phone preview -->
+      <div class="phone-mock call-phone" style="transform:rotate(-4deg)">
+        <div class="phone-notch"></div>
+        <div style="padding:14px 12px;background:var(--bg)">
+          <div style="text-align:center;padding:10px 0">
+            <div
+              style="width:48px;height:48px;background:linear-gradient(135deg,var(--blue),var(--teal));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2em;margin:0 auto 8px;box-shadow:0 0 20px rgba(79,138,255,.5)">
+              📞</div>
+            <div style="font-size:.7em;font-weight:700;color:var(--white)">AI Call Agent</div>
+            <div
+              style="font-size:.6em;color:var(--green);margin-top:2px;display:flex;align-items:center;justify-content:center;gap:4px">
+              <span
+                style="width:5px;height:5px;background:var(--green);border-radius:50%;display:inline-block;animation:blink 1s infinite"></span>Live
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:5px;margin-top:4px">
+            <div
+              style="background:rgba(79,138,255,.15);border:1px solid rgba(79,138,255,.2);border-radius:7px;padding:6px 8px;font-size:.6em;color:var(--white);align-self:flex-end;max-width:88%">
+              Table for 4 tonight at 8 PM? 🎉</div>
+            <div
+              style="background:var(--card2);border:1px solid var(--bdr2);border-radius:7px;padding:6px 8px;font-size:.6em;color:var(--m2);align-self:flex-start;max-width:88%">
+              Yes please! Name?</div>
+            <div
+              style="background:rgba(79,138,255,.15);border:1px solid rgba(79,138,255,.2);border-radius:7px;padding:6px 8px;font-size:.6em;color:var(--white);align-self:flex-end;max-width:88%">
+              Booked under Ahmed ✓</div>
+          </div>
+        </div>
+      </div>
+      <!-- WA phone preview -->
+      <div class="phone-mock wa-phone" style="transform:rotate(4deg);margin-bottom:20px">
+        <div class="phone-notch"></div>
+        <div style="background:#1F2C34;padding:8px 10px;display:flex;align-items:center;gap:7px">
+          <div
+            style="width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7em">
+            🤖</div>
+          <div>
+            <div style="font-size:.65em;font-weight:700;color:#E9EDEF">Restaurant AI</div>
+            <div style="font-size:.55em;color:var(--green)">● online</div>
+          </div>
+        </div>
+        <div style="padding:10px 10px;display:flex;flex-direction:column;gap:6px;background:#0A1418">
+          <div
+            style="background:#1F2C34;border-radius:2px 8px 8px 8px;padding:7px 9px;font-size:.6em;color:#E9EDEF;align-self:flex-start;max-width:88%">
+            Are you open today?</div>
+          <div
+            style="background:#005C4B;border-radius:8px 2px 8px 8px;padding:7px 9px;font-size:.6em;color:#E9EDEF;align-self:flex-end;max-width:88%;text-align:right">
+            Yes! Open 12PM–2AM 🕐<span style="color:var(--green);margin-left:3px">✓✓</span></div>
+          <div
+            style="background:#1F2C34;border-radius:2px 8px 8px 8px;padding:7px 9px;font-size:.6em;color:#E9EDEF;align-self:flex-start;max-width:88%">
+            Book table for 2, 8 PM?</div>
+          <div
+            style="background:#005C4B;border-radius:8px 2px 8px 8px;padding:7px 9px;font-size:.6em;color:#E9EDEF;align-self:flex-end;max-width:88%;text-align:right">
+            Confirmed! Table for 2 at 8PM ✅<span style="color:var(--green);margin-left:3px">✓✓</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════
+     DEMO SECTION
+══════════════════════════ -->
+  <section id="demo">
+    <div class="container">
+      <div class="sec-label" style="color:var(--blue)">Live Demo</div>
+      <h2 class="sec-title reveal">See It Work. <span style="color:var(--blue)">Right Now.</span></h2>
+      <p class="sec-sub reveal">Press play and watch the AI handle a real restaurant conversation — from "are you open?"
+        to "table booked." Toggle between Call and WhatsApp.</p>
+
+      <!-- TABS -->
+      <div class="demo-tabs reveal">
+        <button class="demo-tab call-tab active" id="tab-call" onclick="switchDemo('call')">📞 AI Call Demo</button>
+        <button class="demo-tab wa-tab" id="tab-wa" onclick="switchDemo('wa')">💬 WhatsApp Demo</button>
+      </div>
+
+      <!-- CALL DEMO -->
+      <div id="call-demo" class="demo-area reveal">
+        <div class="demo-phone-wrap">
+          <div class="phone-mock call-phone" style="width:195px">
+            <div class="phone-notch"></div>
+            <div class="call-screen">
+              <div class="call-header-ui">
+                <div class="call-avatar" id="callAvatar">📞</div>
+                <div class="call-restaurant-name">Dubai Luxury Restaurant</div>
+                <div class="call-status-line" id="callStatus">
+                  <span class="sdot off" id="callDot"></span>
+                  <span id="callStatusText">Tap Play to start</span>
+                </div>
+              </div>
+              <div class="call-waves" id="callWaves">
+                <div class="cw ai-wave" style="height:5px"></div>
+                <div class="cw ai-wave" style="height:12px"></div>
+                <div class="cw ai-wave" style="height:20px"></div>
+                <div class="cw ai-wave" style="height:14px"></div>
+                <div class="cw ai-wave" style="height:8px"></div>
+                <div class="cw cust-wave" style="height:5px"></div>
+                <div class="cw cust-wave" style="height:14px"></div>
+                <div class="cw cust-wave" style="height:22px"></div>
+                <div class="cw cust-wave" style="height:10px"></div>
+              </div>
+              <div class="call-transcript" id="callTranscript"></div>
+              <div class="call-btns-ui">
+                <button class="cbtn cbtn-mute">🔇</button>
+                <button class="cbtn cbtn-end disabled" id="endBtn">📵</button>
+                <button class="cbtn cbtn-speaker">🔊</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="demo-info">
+          <h3>AI answers every call.<br><span style="color:var(--blue)">Books the table.</span><br>No human needed.</h3>
+          <p>Watch the full conversation: customer asks if you're open, gets location and hours, books a table, confirms
+            name — all handled in under 20 seconds.</p>
+          <button class="demo-play-btn" id="callPlayBtn" onclick="startCallDemo()">▶ Play Call Demo</button>
+          <div class="voice-note" id="voiceNote">🔊 Real AI voice will speak — turn up your volume</div>
+          <div class="demo-steps" id="callSteps">
+            <div class="ds-item" id="cds0">
+              <div class="ds-num">1</div>
+              <div class="ds-body">
+                <h5>Call answered instantly</h5>
+                <p>AI picks up in under 1 ring</p>
+              </div>
+            </div>
+            <div class="ds-item" id="cds1">
+              <div class="ds-num">2</div>
+              <div class="ds-body">
+                <h5>"Are you open today?"</h5>
+                <p>Yes, open 12 PM to 2 AM</p>
+              </div>
+            </div>
+            <div class="ds-item" id="cds2">
+              <div class="ds-num">3</div>
+              <div class="ds-body">
+                <h5>"Where are you?"</h5>
+                <p>JBR Walk, Dubai Marina</p>
+              </div>
+            </div>
+            <div class="ds-item" id="cds3">
+              <div class="ds-num">4</div>
+              <div class="ds-body">
+                <h5>"Book a table for 2 at 8 PM"</h5>
+                <p>Confirmed under Ahmed ✓</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WA DEMO -->
+      <div id="wa-demo" class="demo-area reveal" style="display:none">
+        <div class="demo-phone-wrap">
+          <div class="phone-mock wa-phone" style="width:195px">
+            <div class="phone-notch"></div>
+            <div class="wa-screen">
+              <div class="wa-topbar">
+                <div class="wa-av">🤖</div>
+                <div>
+                  <div class="wa-name-ui">Your Restaurant AI</div>
+                  <div class="wa-online-ui" id="waOnline">● online</div>
+                </div>
+              </div>
+              <div class="wa-body" id="waBody">
+                <div class="wa-time-tag">Today</div>
+              </div>
+              <div class="wa-input-bar">
+                <div style="font-size:1em;color:var(--m)">😊</div>
+                <div class="wa-input-fake"></div>
+                <div
+                  style="width:32px;height:32px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8em">
+                  🎤</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="demo-info">
+          <h3>Replies in <span style="color:var(--green)">3 seconds.</span><br>Every message.<br>All night.</h3>
+          <p>Watch the full chat: open hours, location, table booking, name confirmation — automatically handled from
+            first message to confirmed booking.</p>
+          <button class="demo-play-btn green-btn" id="waPlayBtn" onclick="startWaDemo()">▶ Play WhatsApp Demo</button>
+          <div class="voice-note">💬 Messages appear exactly as customers and AI see them</div>
+          <div class="demo-steps" id="waSteps">
+            <div class="ds-item" id="wds0">
+              <div class="ds-num">1</div>
+              <div class="ds-body">
+                <h5>"Are you open today?"</h5>
+                <p>AI replies in 3 seconds</p>
+              </div>
+            </div>
+            <div class="ds-item" id="wds1">
+              <div class="ds-num">2</div>
+              <div class="ds-body">
+                <h5>"Where are you located?"</h5>
+                <p>Full address with directions</p>
+              </div>
+            </div>
+            <div class="ds-item" id="wds2">
+              <div class="ds-num">3</div>
+              <div class="ds-body">
+                <h5>"Can I book a table?"</h5>
+                <p>Takes time, party size, name</p>
+              </div>
+            </div>
+            <div class="ds-item" id="wds3">
+              <div class="ds-num">4</div>
+              <div class="ds-body">
+                <h5>Table confirmed ✅</h5>
+                <p>Booking logged automatically</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════
+     STATS
+══════════════════════════ -->
+  <section style="padding:70px 20px">
+    <div class="container">
+      <div class="stats-row reveal">
+        <div class="stat">
+          <div class="stat-val" style="color:var(--green)">100%</div>
+          <div class="stat-lbl">Calls answered — always</div>
+        </div>
+        <div class="stat">
+          <div class="stat-val" style="color:var(--blue)">&lt;3 sec</div>
+          <div class="stat-lbl">WhatsApp reply time</div>
+        </div>
+        <div class="stat">
+          <div class="stat-val" style="color:var(--gold)">24/7</div>
+          <div class="stat-lbl">Available, no breaks</div>
+        </div>
+        <div class="stat">
+          <div class="stat-val" style="color:var(--teal)">2 lang</div>
+          <div class="stat-lbl">Arabic + English</div>
+        </div>
+      </div>
+
+      <!-- ROI -->
+      <div class="sec-label reveal" style="color:var(--gold)">Real Numbers</div>
+      <h2 class="sec-title reveal">What Your Restaurant <span style="color:var(--gold)">Gains Every Month</span></h2>
+      <div class="roi-grid reveal">
+        <div class="roi-card">
+          <div class="roi-top">
+            <div class="roi-icon">📵</div>
+            <div class="roi-gain rg-g">+3,750 AED</div>
+          </div>
+          <div class="roi-num" style="color:var(--green)">150</div>
+          <div class="roi-label">Missed calls recovered</div>
+          <div class="roi-desc">AI answers every call. 25% book a table at 200 AED average.</div>
+        </div>
+        <div class="roi-card">
+          <div class="roi-top">
+            <div class="roi-icon">⏰</div>
+            <div class="roi-gain rg-b">+3,000 AED</div>
+          </div>
+          <div class="roi-num" style="color:var(--blue)">2 hrs</div>
+          <div class="roi-label">Staff time saved daily</div>
+          <div class="roi-desc">No more answering phones and WhatsApp. Staff focus on guests.</div>
+        </div>
+        <div class="roi-card">
+          <div class="roi-top">
+            <div class="roi-icon">🌙</div>
+            <div class="roi-gain rg-gold">+2,400 AED</div>
+          </div>
+          <div class="roi-num" style="color:var(--gold)">3/wk</div>
+          <div class="roi-label">After-hours bookings captured</div>
+          <div class="roi-desc">Tables booked at 11 PM, midnight, 1 AM — while you sleep.</div>
+        </div>
+        <div class="roi-card">
+          <div class="roi-top">
+            <div class="roi-icon">📢</div>
+            <div class="roi-gain rg-g">+1,200 AED</div>
+          </div>
+          <div class="roi-num" style="color:var(--teal)">100%</div>
+          <div class="roi-label">Promotions on every call</div>
+          <div class="roi-desc">AI always mentions happy hour. Staff forget. AI never does.</div>
+        </div>
+      </div>
+      <div class="roi-total reveal">
+        <div class="rt-left">
+          <h3>Total: 10,350 AED <span style="color:var(--green)">gained</span></h3>
+          <p>Every month. On autopilot. For just 1,200 AED.</p>
+        </div>
+        <div class="rt-right">
+          <div class="rt-big">20×</div>
+          <div class="rt-lbl">return on investment</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════
+     PRICING
+══════════════════════════ -->
+  <section id="pricing">
+    <div class="container" style="text-align:center">
+      <div class="sec-label reveal" style="color:var(--green);margin:0 auto 12px">Pricing</div>
+      <h2 class="sec-title reveal" style="margin-bottom:8px">One Package. <span style="color:var(--green)">Everything
+          Included.</span></h2>
+      <p class="sec-sub reveal" style="margin:0 auto 36px">Call AI + WhatsApp AI + Arabic + English + Setup + Support. I
+        handle everything.</p>
+
+      <div class="combo-card reveal">
+        <div class="combo-badge">COMBO DEAL</div>
+        <div class="combo-top">
+          <div class="combo-icons">
+            <div class="ci-box"><span class="ico">📞</span><span class="lbl" style="color:var(--blue)">AI Call
+                Agent</span></div>
+            <div class="ci-plus">+</div>
+            <div class="ci-box"><span class="ico">💬</span><span class="lbl" style="color:var(--green)">WhatsApp
+                AI</span></div>
+          </div>
+          <div class="combo-price-area">
+            <div class="cp-num">1,200</div>
+            <div class="cp-unit">AED / month</div>
+          </div>
+        </div>
+        <div class="combo-feats">
+          <div class="cf-item">24/7 call answering</div>
+          <div class="cf-item">WhatsApp instant replies</div>
+          <div class="cf-item">Arabic + English</div>
+          <div class="cf-item">Table reservations</div>
+          <div class="cf-item">Menu & hours Q&A</div>
+          <div class="cf-item">Promotions on every call</div>
+          <div class="cf-item">No contract — cancel anytime</div>
+          <div class="cf-item">Live in 24 hours</div>
+        </div>
+        <button class="combo-cta"
+          onclick="window.open('https://wa.me/?text=Hi%2C+I+want+to+set+up+the+AI+Call+%26+WhatsApp+assistant+for+my+restaurant','_blank')">
+          🚀 Get Started — WhatsApp Us Now
+        </button>
+        <div class="combo-note">No payment now · Setup in 24 hours · You only pay once it's live and you're happy</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Restaurant<span>AI</span> Dubai</div>
+    <div class="footer-sub">AI Call + WhatsApp Automation for Dubai Restaurants · Arabic + English · 24/7</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
